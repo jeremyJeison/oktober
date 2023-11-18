@@ -1,309 +1,106 @@
 *{
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
   --Itfoo:50px;
   --Cont:170px
 }
 html{
-  height: 4000px;
+    height: 4000px;
+    width: 100%;
+    min-width: 400px;
 }
-.BHdiv{
-background-color: lawngreen;
-text-align: center;
-height: 40px;
+body{
+  background-color: rgb(57, 204, 57);
 }
-a{
-  display: inline-block;
-  text-decoration: none;
-  padding: 4px;
-  /* margin-top: 10px; */
-  font-size: 25px;
-  font-weight: 900;
-  /* background-color: blue; */
-  line-height: 35px;
+.head{
+  display: block;
+  background-color: aquamarine;
+  text-align: center;
+  color: rgb(0, 119, 255);
+  text-decoration: solid;
+  font-size: larger;
+  font-weight: 600;
   text-transform: uppercase;
-  font-family: 'Lucida Sans';
-  color: rgb(219, 221, 79);
-  
 }
-.StickyHead{
-background-color:black ;
-color: aliceblue;
-/* text-align: center; */
-position: sticky;
-width: 100vw;
-height: 70px;
-top: 10px;
-/* position: relative; */
-}
-.ImRoze{
-  position: relative;
-  width: 55px;
-  left: 80px;
-  top: 4px;
-  border-radius: 32px;
-}
-.InA{
-  display: none;
-  position:absolute;
-  background-color: burlywood;
-  font-size: 10px;
-  height: 20px;
-  color: black;
-  line-height: 22px;
-  left: 150px;
-}
-.ATesty:hover > .InA{
-  display: block;
-  position: absolute;
-}
-.mers{
-  position: relative;
-bottom: 17px;
-left: 600px;
-background-color: rgb(32, 138, 97);
-color:rgb(214, 195, 232);
-display: inline-block;
-}
-
-.bens{
-  position: absolute;
-  display: none;
-
-}
-.bensASL{
-  position: absolute;
-  color: black;
-  left: 80px;
-  display: none;
-  background-color: blueviolet;
-  width: 40px;
-}
-.mers:hover > .bens{
-display:block;
-background-color: rgb(45, 94, 94);
-border: 2px solid;
-}
-.bens > .bensA:hover{
-  background-color: red;
-}
-.bensA:hover > .bensASL{
-  display: block;
-}
-.bensA > .bensASL:hover{
-  background-color: rgb(119, 119, 237);
-}
-.ford{
-  position: relative;
-  /* left: 5px; */
-  right:36px ;
-  /* top: 1px; */
-  bottom:5px;
+.stiki{
   display: inline-block;
+  background-color: rgb(118, 169, 169);
+  position: sticky;
+  top: 1px;
+  width: 100%;
+  height: 70px;
+  border: 0px 0px ;
+  border-radius: 10px;
+
+}
+.dropmen{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  background-color: rgb(227, 85, 85);
+  left: 20px;
+  top: 14px;
+  border-radius: 5px;
+  text-align: center;
+  /* line-height: px; */
+  padding: 8px 0px;
+
+}
+.todown{
+  display: none;
+  position: absolute;
+  width: 40px;
+  height: 50px;
   background-color: black;
   
 }
-.fordCo{
-  margin: 1px;
-  border: 2px solid white;
-  border-bottom: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  width: 27px;
-  margin-bottom: 8px;
-}
-.fordCo1{
-  margin: 1px;
-  border: 2px solid white;
-  border-bottom: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  width: 27px;
-  margin-bottom: 8px;
-}
-.fordCo2{
-  margin: 1px;
-  border: 2px solid white;
-  border-bottom: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  width: 27px;
-  margin-bottom: 8px;
-}
-.FordFil{
-  position: absolute;
-  display: none;
-}
-.T{
-position: absolute;
-display: none;
-}
-.ford:hover > .T{
+.dropmen:hover > .todown{
   display: block;
-  width: 90px;
-  height: 220px;
-}
-
-.ford > div{
-  /* display: block; */
-  color: rgb(51, 210, 30);
-  background-color: rgb(231, 237, 237);
-  
-}
-.T > div:hover{
-  background-color: blueviolet;
-}
-.A{
-  position: relative;
-  display: block;
-}
-.B{
-  position: absolute;
-  color: black;
-  display: none;
-  left: 30px;
-  width: 90px;
-  background-color: bisque;
-  border: 2px solid;
-  border-radius: 3px;
-}
-
-.A:hover > .B {
-display: block;
-left: 60px;
-/* overflow: visible; */
-}
-/*
-
-*/
-.A > .B:hover{
-background-color: blue;
-}
-
-
-/*
-
-
-
-*/
-
-.Input{
-  position: absolute;
-  outline: none;
-  padding: 14px;
+  left: 25px;
+  top: 40px;
   border-radius: 5px;
-  left: 167px;
-  top: 7px;
-  width: 425px;
-  background-image: url("search.png");
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-position-x: 20px;
-  /* background-position: 10px; */
-  font-size: 20px;
 }
-input:focus{
-  background-image: none;
-  
-}
-.NavforBa{
-  position: absolute;
-  display: inline-block;
-  left: 590px;
-  top: 8px;
-}
-.NavforBa2{
-  position: relative;
-  display: inline-block;
-  left: 590px;
-  top: 8px;
-}
-button{
-  background-color:rgb(97, 191, 3);
-  padding: 15px 20px;
-  border: none;
-  font-size: 20px;
-  border-radius: 0px 3px 3px 0px;
-  color:azure;
-}
-/* .Ina{
+.inside{
   display: none;
-  position:absolute;
+  width: 250px;
+  height: 250px;
+  position: absolute;
   background-color: burlywood;
-  font-size: 10px;
-  height: 20px;
-  color: black;
-  line-height: 22px;
-  left: 150px;
-} */
-.NavforBa:hover > .Ina{
-  display: block;
-  position: absolute;
 }
+.todown:hover > .inside{
+  display: block;
+  top:40px;
+  left: 40px;
+}
+.inputStiky{
+  display: inline-block;
+  position:absolute;
+  left: 80px;
+  top: 23px;
+  border-radius: 8px;
+}
+.inStLink{
+  display: inline-block;
+  position: absolute;
+  left: 320px;
+  top: 22px;
 
-.InfoMagaz{
-background-color: rgb(179, 179, 59);
-width: 100vw;
-height: 280px;
-background-image: url(завантаження.png);
-background-repeat: no-repeat;
-background-size: cover;
-/* margin: 20px; */
-margin-top: 20px;
 }
-.Prokr{
-  width: 1500px;
-  height: 300px;
-  display: flex;
-  overflow-x: auto;
+.testIm{
+  background-image: url("musls.jfif");
+  width: 100%;
+  height: 500px;
+  color: azure;
+  background-repeat: no-repeat;
 }
-.ProkrIn{
+.forRegistr{
   display: inline-block;
-  width: 400px;
-  height: 200px;
-  background-color: aqua;
-  margin: 10px;
-  overflow-x: hidden;
-}
-.te{
-  background-color: blueviolet;
-}
-input[type="radio"]{
-  display: none;
-}
-label{
-  display: block;
-  padding: 10px;
-  border-bottom: 1px solid black;
-  color: white;
-  background-color: #0076ff;
-}
-.accordion:last-child > label, .accordion:last-child > .accordion-content {border: none;}
-.accordion-content{
-  border-bottom: 1px solid black;
-  padding: 15px;
-  display: none;
-}
-input:checked ~ .accordion-content {
-  display: block;
-}
-.wow:hover{
-display: block;
-position: relative;
-}
-.owo{
-  display: none;
-  position: absolute;
-}
-.qw{
-  position: absolute;
-  display: inline-block;
-}
-.qa{
-  position: absolute;
-  display: none;
-}
-.qw:hover > .qa{
-  display: block;
+  background-color: bisque;
+  border-radius: 20%;
+  color: aquamarine;
+  font-size: 15px;
+  position:relative;
+  left: 280px;
+  text-decoration: none;
 }
